@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>train-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: o;
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 500px;
+            height: 400px;
+            background-color: #333;
+            margin: 200px auto;
+        }
+        .box{
+           width: 100px;
+           height: 70px;
+           background-color: dodgerblue;
+           float: left; 
+           border-left: 1px solid black;
+           text-align: center;
+           font-size: 25px;
+           line-height: 70px;
+           font-weight: bolder;
+           font-family: cursive;
+        
+        }
+        .parent .box:first-child{
+            border: none;
+        }
+        .box1{
+            background-color: dodgerblue;
+        }
+        .box2{
+            background-color: blueviolet;
+        }
+        .box3{
+            background-color: coral;
+        }
+        .box4{
+            background-color:palegreen;
+        }
+        .box5{
+            background-color: darkslateblue;
+        }
+        .last{
+            width: 100%;
+            height: 330px;
+            background-color: gray;
+            float: left;
+        }
+        .box1:hover ~.last{
+            background-color: brown;
+        }
+        .box2:hover ~.last{
+            background-color: chartreuse;
+        }
+        .box3:hover ~.last{
+            background-color: cornflowerblue;
+        }
+        .box4:hover ~.last{
+            background-color: crimson;
+        }
+        .box5:hover ~.last{
+            background-color: darkorange;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="last"></div>
+    </div>
+</body>
+</html>

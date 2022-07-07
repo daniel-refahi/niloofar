@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>train-5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #333;
+        }
+        .parent{
+            width: 250px;
+            height: 350px;
+            background-color: darkcyan;
+            border: 1px solid black;
+            margin: 200px auto;
+            background: url(images/01.jpg) no-repeat  center center;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        .child{
+            width: 100%;
+            height: 50px;
+            background-color: rgba(221, 160, 221, 0.719);
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            transition-duration: 1s;
+            
+        }
+        .parent:hover > .child{
+            bottom: 0;
+            left: 0;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">flowers</div>
+    </div>
+</body>
+</html>
